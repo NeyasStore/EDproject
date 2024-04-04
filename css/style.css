@@ -54,7 +54,9 @@ Table OF Contents
 /*----------------------------*\
 	Typography
 \*----------------------------*/
-
+.dropdown-button::after {
+  display: none;
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -534,7 +536,11 @@ textarea.input {
   border-radius: 50%;
   font-size: 10px;
   color: #FFF;
+<<<<<<< HEAD
+  background-color:#692C71;
+=======
   background-color: #692C71;
+>>>>>>> c78b985a7f32e72e3b8deee16163742b827074a9
 }
 
 .header-ctn .menu-toggle {
