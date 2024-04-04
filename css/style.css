@@ -886,6 +886,7 @@ textarea.input {
   font-size: 12px;
 }
 
+
 .product .product-img .product-label>span.sale {
   background-color: #FFF;
   border-color: #D10024;
@@ -2187,4 +2188,8 @@ textarea.input {
     float: none;
     margin-top: 10px;
   }
+}
+.product-img>img{
+  width: 200px;
+  height: 250px;
 }
