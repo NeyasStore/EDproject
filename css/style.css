@@ -545,15 +545,9 @@ textarea.input {
   text-align: center;
   border-radius: 50%;
   font-size: 10px;
-<<<<<<< HEAD
-  color: #FFF;
-  background-color: #692C71;
-
-=======
   color: #000000;
   background-color:#FAF8BD;
   background-color: #FAF8BD;
->>>>>>> 2ba32561823c321f2443874352943243e0002c99
 }
 
 .header-ctn .menu-toggle {
@@ -2164,6 +2158,50 @@ textarea.input {
   color: white;
   font-size: 36px;
   display: block;
+}
+
+.shop-services.section {
+    padding: 80px 0 0px 0;
+    background: #fff;
+}
+
+.shop-services.home {
+    padding: 60px 0;
+    background: #234e70;
+}
+
+.shop-services .single-service {
+    position: relative;
+    padding-left: 65px;
+}
+
+.shop-services .single-service i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: WHITE;
+    background: transparent;
+    border-radius: 100%;
+    display: block;
+    font-size: 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.shop-services .single-service h4 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 22px;
+    color: #FAF8BD;
+}
+
+.shop-services .single-service p {
+    color: WHITE;
+    line-height: 28px;
+    font-size: 14px;
 }
 
 /*=========================================================
