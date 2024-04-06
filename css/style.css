@@ -591,6 +591,8 @@ textarea.input {
 .cart-dropdown .cart-list .product-widget .product-img {
   left: 0px;
   top: 0px;
+  height:60px;
+  width:60px;
 }
 
 .cart-dropdown .cart-list .product-widget .product-body .product-price {
@@ -1197,7 +1199,8 @@ textarea.input {
 }
 
 .product-widget .product-img>img {
-  width: 100%;
+  width: 60px;
+  height: 60px;
 }
 
 .product-widget .product-body {
