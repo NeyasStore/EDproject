@@ -608,7 +608,7 @@ textarea.input {
   width: calc(50% - 0px);
   padding: 12px;
   background-color: #234E70;
-  color: #000000;
+  color: #fff;
   text-align: center;
   font-weight: 700;
   -webkit-transition: 0.2s all;
@@ -1221,6 +1221,7 @@ textarea.input {
 
 .product-widget .product-body .product-name>a {
   font-weight: 700;
+  
 }
 
 .product-widget .product-body .product-name>a:hover, .product-widget .product-body .product-name>a:focus {
