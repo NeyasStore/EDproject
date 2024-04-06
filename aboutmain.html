@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Slick -->
+  <link type="text/css" rel="stylesheet" href="css/slick.css" />
+  <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+  <!-- nouislider -->
+  <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Custom stlylesheet -->
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/Footer.css"/>
+
+
+  <style>
+    body {
+      background-color: rgb(238, 235, 235);
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 100px 20px;
+    }
+
+    article {
+      background-color: white;
+      width: 220px;
+      height: 350px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+      overflow: hidden;
+
+    }
+
+    article h2,
+    h3 {
+      background-color: #234E70;
+      color: white;
+      margin-top: 0;
+      padding: 10px 5px;
+
+    }
+
+    article div {
+      padding: 10px;
+    }
+
+    /* #slogan h1 {
+      font-family: 'Italianno'
+    } */
+    
+    #slogan{
+      background-color: #234E70;
+      margin: 50px 0;
+    }
+    
+
+    #slogan h1 {
+      color: white;
+      font-family: "Italianno", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 60px;
+      text-align: center;
+    }
+
+    #bottom-footer{
+        background-color: #234E70;
+    }
+    @media(max-width:480px) {
+      main {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      article {
+        width: 90%;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- TOP HEADER -->
+
+    <!-- /TOP HEADER -->
+
+    <!-- MAIN HEADER -->
+    <div id="header">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-3">
+            <div class="header-logo">
+              <a href="#" class="logo">
+                <img src="./img/logo.jpg" alt="" class="logo_image">
+              </a>
+            </div>
+          </div>
+          <!-- /LOGO -->
+
+          <!-- SEARCH BAR -->
+          <div class="col-md-6">
+            <div class="header-search">
+              <form>
+                <select class="input-select">
+                  <option value="0">All Categories</option>
+                  <option value="1">Category 01</option>
+                  <option value="1">Category 02</option>
+                </select>
+                <input class="input" placeholder="Search here">
+                <button class="search-btn">Search</button>
+              </form>
+            </div>
+          </div>
+          <!-- /SEARCH BAR -->
+
+          <!-- ACCOUNT -->
+          <div class="col-md-3 clearfix">
+            <div class="header-ctn">
+              <!-- Wishlist -->
+              <div>
+                <a href="#">
+                  <i class="fa fa-heart-o"></i>
+                  <span>Your Wishlist</span>
+                  <div class="qty">2</div>
+                </a>
+              </div>
+              <!-- /Wishlist -->
+
+              <!-- Cart -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Your Cart</span>
+                  <div class="qty">3</div>
+                </a>
+                <div class="cart-dropdown">
+                  <div class="cart-list">
+                    <div class="product-widget">
+                      <div class="product-img">
+                        <img src="./img/product01.png" alt="">
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                        <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+                      </div>
+                      <button class="delete"><i class="fa fa-close"></i></button>
+                    </div>
+
+                    <div class="product-widget">
+                      <div class="product-img">
+                        <img src="./img/product02.png" alt="">
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                        <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+                      </div>
+                      <button class="delete"><i class="fa fa-close"></i></button>
+                    </div>
+                  </div>
+                  <div class="cart-summary">
+                    <small>3 Item(s) selected</small>
+                    <h5>SUBTOTAL: $2940.00</h5>
+                  </div>
+                  <div class="cart-btns">
+                    <a href="#">View Cart</a>
+                    <a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Cart -->
+
+              <!-- Menu Toogle -->
+              <div class="menu-toggle">
+                <a href="#">
+                  <i class="fa fa-bars"></i>
+                  <span>Menu</span>
+                </a>
+              </div>
+              <!-- /Menu Toogle -->
+            </div>
+          </div>
+          <!-- /ACCOUNT -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- /MAIN HEADER -->
+  </header>
+  <!-- /HEADER -->
+
+  <!-- NAVIGATION -->
+  <nav id="navigation">
+    <!-- container -->
+    <div class="container">
+      <!-- responsive-nav -->
+      <div id="responsive-nav">
+        <!-- NAV -->
+        <ul class="main-nav nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="mens.html">Mens</a></li>
+          <li><a href="women.html">Womens</a></li>
+        </ul>
+        <!-- /NAV -->
+      </div>
+      <!-- /responsive-nav -->
+    </div>
+    <!-- /container -->
+  </nav>
+  <!-- /NAVIGATION -->
+
+  <div id="slogan">
+    <h1>Wear the Classic,Feel the Elegance</h1>
+  </div>
+
+  <main>
+    <article>
+      <h3>
+        About Neyas
+      </h3>
+      <div>
+        Welcome to Neyas, where quality meets affordability in home textiles, women's, and men's apparel. At
+        Neyas,
+        we believe that everyone deserves access to high-quality products that enhance their daily lives without
+        breaking the bank. With our dedication to craftsmanship and value, we aim to bring luxury within reach
+        for
+        all.
+      </div>
+    </article>
+
+
+    <article>
+      <h3>
+        Our Mission
+      </h3>
+      <div>
+        At Neyas, our mission is simple yet profound: to provide affordable high-quality products to people
+        across
+        the globe. We are committed to offering a diverse range of home textile solutions, women's dresses, and
+        men's apparel that exude elegance, comfort, and style without compromising on quality.
+      </div>
+    </article>
+
+    <article>
+      <h3>
+        Our Products
+      </h3>
+      <div>
+
+        Women's Apparel: Explore our collection of women's dresses designed to inspire confidence and
+        sophistication. Whether you're looking for casual chic or formal elegance, Neyas has something for every
+        occasion.
+        Men's Apparel: Discover timeless pieces crafted with precision and style.
+      </div>
+    </article>
+
+    <article>
+      <h3>
+        QualityAssurance
+      </h3>
+      <div>
+        At Neyas, we prioritize quality above all else. Each product in our range undergoes rigorous quality
+        control
+        measures to ensure durability, comfort, and style. We source the finest materials and work with skilled
+        artisans to create products that exceed expectations.
+      </div>
+    </article>
+
+    <article>
+      <h3>
+        Affordability
+      </h3>
+      <div>
+        We understand the importance of value for money. That's why Neyas is dedicated to offering premium
+        products
+        at prices that won't break the bank. By streamlining our processes and eliminating unnecessary costs, we
+        pass on the savings to our customers, making luxury accessible to all.
+      </div>
+    </article>
+
+    <article>
+      <h3>
+        Join Community
+      </h3>
+      <div>
+        Experience the Neyas difference today. Explore our collection and join our community of discerning
+        individuals who appreciate the perfect blend of quality and affordability. At Neyas, luxury is not a
+        luxury—it's a necessity.
+
+        Thank you for choosing Neyas.
+      </div>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <!-- top footer -->
+    <div class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-3 col-xs-6">
+            <div class="footer">
+              <h3 class="footer-title">About Us</h3>
+              <p>we merge comfort with style in our high-quality home textiles.</p>
+              <ul class="footer-links">
+                <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="footer">
+              <h3 class="footer-title">Categories</h3>
+              <ul class="footer-links">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">App</a></li>
+                <li><a href="#">Apparels</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="clearfix visible-xs"></div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="footer">
+              <h3 class="footer-title">Information</h3>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Orders and Returns</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="footer">
+              <h3 class="footer-title">Service</h3>
+              <ul class="footer-links">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /top footer -->
+
+    <!-- bottom footer -->
+    <div id="bottom-footer" class="section">
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="footer-payments">
+              <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+              <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+              <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+              <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+              <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+              <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+            </ul>
+            <span class="copyright">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
+              with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                target="_blank">Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </span>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /bottom footer -->
+  </footer>
+  <!-- /FOOTER -->
+
+
+</body>
+
+</html>
